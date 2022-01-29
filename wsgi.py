@@ -1,3 +1,3 @@
-from web.app import socketio
+from web.app import socketio, app
 
-socketio.run()
+socketio.run(app)
