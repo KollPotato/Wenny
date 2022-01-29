@@ -6,10 +6,6 @@ import json, asyncio, random, hashlib, datetime, requests
 
 app = Flask(__name__)
 app.secret_key = 'NbP5?D3SpQd1!'
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'Koll'
-app.config['MYSQL_PASSWORD'] = 'VElk41POL!'
-app.config['MYSQL_DATABASE'] = 'zendy'
 
 mysql = MySQL(app)
 socketio = SocketIO(app)
